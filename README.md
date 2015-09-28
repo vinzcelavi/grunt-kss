@@ -33,10 +33,10 @@ grunt.initConfig({
       css: '/path/to/style.css',
     },
     dist: {
-	    files: {
-	      '/path/to/destdir': ['/path/to/sourcedir']
-	    }
-  	}
+      files: {
+        '/path/to/destdir': ['/path/to/sourcedir']
+      }
+    }
   }
 });
 ```
@@ -52,6 +52,22 @@ grunt.registerTask('styleguide', [
 ```
 
 Finally, you can call kss by running `grunt styleguide`.
+
+### CSS Comments convention
+
+```css
+/* Buttons
+
+Markup:
+<button class="button {{modifier_class}}">Download</span>
+
+.button--small       - Button small
+.button--white       - Button white
+.button--full        - Button fullwidth
+
+Styleguide 1.0
+*/
+```
 
 ### Options
 
